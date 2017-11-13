@@ -1,37 +1,84 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/horace4/vue/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+项目安排
+Day 1打好基础
+在进行业务项目开发之前，搭好项目的架子，做好业务逻辑分层，能够为我们日后的开发起到事倍功半的效果，在第一天你的项目中，我们使用vue+webpack搭建一个基础的项目架子。
+实战要点：
+1.	安装vue
+2.	安装webpack及相关插件
+3.	搭建一个基于vue和webpack的基础工程
+4.	掌握基础的基于rem的前端布局方式(http://web.jobbole.com/84285/)
+5.	掌握less进行css开发(http://lesscss.cn/)
+6.	eslint编码规范(http://eslint.org/docs/rules/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Day 2基础组件
+在组件系统的层次中，基础组件是最底层的，如button、input等等，所有上层的组件都是由基础组件组成的，第二天，我们就来进行基础组件的开发
+实战要点：
+1.	掌握基础的vue组件语法
+2.	建立组件相关的目录结构`
+3.	学会如何写一个基础组件
+4.	class根据属性动态变化的写法
+5.	最终产出的组件系统：
+ 
 
-### Markdown
+Day 3列表组件
+基础组件的组合可以形成我们更高级的一些基础组件，第三天我们以列表组件为例，来学习一些更高级的基础组件的搭建。
+实战要点：
+1.	掌握组件的拆分和组合
+2.	理解组件化的核心思想
+3.	v-for的使用
+4.	computed的使用
+5.	props的一些高级选项
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+Day 4 数据获取
+在第四天我们引入vue-axios，学习一个完全前后端分离的前端应用，如何获取后端数据。
+实战要点：
+1.	vue官方现在不再推荐vue-resource，因为获取后端数据与vue本身没有特别需要整合的地方。现在vue官方推荐使用axios；
+2.	使用axios实现前后端完全分离的数据获取（因为我们的数据是使用jsonp获取的，而axios的作者明确表示不支持jsonp，所以使用其他方案）
+3.	使用es6-promise库，在浏览器端支持promise语法
+4.	使用fetch获取后端数据
+5.	使用fetch-jsonp通过jsonp的方式获取后端数据
 
-- Bulleted
-- List
+Day 5业务组件
+组件系统的第二层是业务组件，以基础组件为基础，我们就能搭建一些和业务相关的组件。
+实战要点：
+1.	掌握业务组件的开发方式；
+2.	理解业务组件和基础组件的区别；
+3.	完成MovieCard和MovieList两个业务组件的开发
 
-1. Numbered
-2. List
+Day 6 使用组件仓库搭建页面
+基础组件和业务组件就形成了我们的组件仓库，通过选择组件仓库中的组件进行组合，我们就能搭建我们真正的前端业务了，在第六天，我们来完整搭建我们的第一个页面。
+实战要点：
+1.	熟练掌握基础组件和业务组件的开发；
+2.	完成第一个完整页面的搭建；
+3.	熟练掌握slot的用法；
+4.	熟练掌握watch的用法；
 
-**Bold** and _Italic_ and `Code` text
+Day 7 兄弟组件间的通信
+在复杂的单页应用中，组件间的通信会非常频繁，今天我们的页面会增加一些事件机制，让大家来学习如何进行兄弟组件的通信。
+实战要点：
+1.	使用v-model进行双向绑定；
+2.	属性控制子组件状态的变化；
+3.	掌握兄弟组件间通信的流程；
+4.	使用总线进行兄弟组件间的通信；
 
-[Link](url) and ![Image](src)
-```
+Day 8 使用Vuex进行组件状态管理
+从昨天的项目，我们可以看到，要实现兄弟组件间的通信，需要有建立一个完整的事件通信机制，有事件的触发和监听。对于一个页面中数据通信非常复杂的场景，对于页面状态的管理就非常重要，在这种场景下，我们可以使用vuex进行数据管理。
+实战要点：
+1.	搭建vuex开发项目的架子；
+2.	理解vuex中state、mutations、actions、getters等核心概念
+3.	使用vuex开发相关的业务
+4.	单向数据流和状态树的概念
+ 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Day 9 vue-router单页应用的搭建
+在完成一个页面间的搭建和数据管理之后，我们就要开始我们真正单页应用的搭建了。今天，我们完成一个单页应用基础的搭建。
+实战要点：
+1.	基础的前端路由的原理
+2.	使用vue-router完成前端路由
+3.	知道如何使用vue-router进行参数传递
 
-### Jekyll Themes
+Day 10 回顾和整理美化项目
+最后一天，我们使用之前项目的实战，来整理和美化我们的项目，最终完成我们完整的项目实战。
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/horace4/vue/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
