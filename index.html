@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <title>dbmove1</title>
-    
+
     <style>
       html{
         font-size: 100px;
@@ -17,10 +17,10 @@
   </body>
   <script>
     (function (doc, win) {
-        var docEl = doc.documentElement,
+        let docEl = doc.documentElement,
           resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
           recalc = function () {
-            var clientWidth = docEl.clientWidth;
+            let clientWidth = docEl.clientWidth;
             if (!clientWidth) return;
             if (clientWidth >= 640) {
               docEl.style.fontSize = '100px';
